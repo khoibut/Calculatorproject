@@ -1,0 +1,58 @@
+body{
+    background-image: url(images/Classroom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#calculatorBase{
+    position: absolute;
+    background-color: rgb(43, 42, 42);
+    left:31%;
+    width:30%;
+    height: 95%;
+    border-radius: 50px;
+}
+#calculatorScreen{
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    left:33.5%;
+    top:10%;
+    background-color: rgb(226, 223, 223);
+}
+#buttonGrid{
+    position: relative;
+    left:5%;
+    top: 43%;
+    width:90%;
+    height:53%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(102, 102, 102);
+    color:white;
+    font-size: 150%;
+    height: 90%;
+    border-left: 10px solid rgb(32, 32, 32);
+}
+#del,#ac{
+    background-color: rgb(112, 197, 90);
+}
+#dot{
+    font-size: 200%;
+    text-align: center;
+}
+#ac{
+    border-radius: 0 35px 0 0;
+}
+#sev{
+    border-radius: 35px 0px 0px 0px;
+}
+#equal{
+    border-radius: 0 0 35px 0;
+}
+#zero{
+    border-radius: 0 0 0 35px;
+}
