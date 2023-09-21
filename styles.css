@@ -12,12 +12,19 @@ body{
     border-radius: 50px;
 }
 #calculatorScreen{
+    display:flex;
     position: absolute;
     width: 25%;
     height: 20%;
     left:33.5%;
     top:10%;
+    text-wrap: nowrap;
     background-color: rgb(226, 223, 223);
+    align-items: center;
+    font-size: 500%;
+    font-family: 'DS-Digital',sans-serif;
+    color:rgb(44, 151, 44);
+    font-weight: bolder;
 }
 #buttonGrid{
     position: relative;
@@ -35,7 +42,6 @@ button{
     color:white;
     font-size: 150%;
     height: 90%;
-    border-left: 10px solid rgb(32, 32, 32);
 }
 #del,#ac{
     background-color: rgb(112, 197, 90);
