@@ -21,6 +21,10 @@ function del(){
 function ac(){
     input.innerHTML=''
 }
+function wysi(){
+    wysi727=new Audio("audios/wysi.mp3")
+    wysi727.play()
+}
 function calculate(){
     result=true;
     formula=input.innerHTML
@@ -30,6 +34,7 @@ function calculate(){
     try{
         input.innerHTML=eval(formula)
         Ans=eval(formula)
+        if (Ans.toString().replace(".","").includes('727')){wysi()}
     }catch{
         input.innerHTML="error"
     }
@@ -55,10 +60,9 @@ for(i=0;i<buttons.length;i++){
     })
 }
 document.addEventListener("keydown",function(key){
-    console.log(key)
     if(key.key=="Enter"){
         calculate()
-    }else if(key.key=="backspace"){
+    }else if(key.key=="Backspace"){
         del()
     }else if(acceptCharacters.includes(key.key)){
         numberClicked(key.key.replace('/','÷').replace('*','x'))
